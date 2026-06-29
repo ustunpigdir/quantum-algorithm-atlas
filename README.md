@@ -38,7 +38,7 @@ Working decisions + parked ideas: see [`project-log.md`](./project-log.md).
 ```
 
 ## Running Stage 0
-(Filled in once the scraper lands.)
+Stage 0 fetches the public Quantum Algorithm Zoo page, saves the raw HTML for provenance, and turns the catalog into a deterministic CSV seed dataset at data/qaz_seed.csv. The scraper is defensive about irregular markup, writes stable rows sorted by category and name, and prints a short summary of how many algorithms and categories were recovered. Run it from the repository root with:
 ```
 pip install -r requirements.txt
 python src/scrape_qaz.py

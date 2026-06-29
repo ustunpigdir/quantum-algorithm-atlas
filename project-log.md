@@ -5,9 +5,18 @@
 ---
 
 ## Next single step
-**Pick the learning entry point** (or tell me to verify courses first). Full design lives in `pipeline-design.md`.
+**Commit + push the Stage 0 result**, then decide whether to start Stage 1 (harvest) now or later.
 
-> See `pipeline-design.md` for the full pipeline: tools, schema, keywords, concepts, learning resources.
+## Status
+- ✅ Repo scaffolded + pushed to GitHub (public).
+- ✅ **Stage 0 complete:** `src/scrape_qaz.py` → `data/qaz_seed.csv`, **74/74 algorithms**, verified clean (distinct names/ids, no empty name/category/speedup/description). 4 categories (correct for the Zoo).
+- ⏳ Commit + push the Stage 0 output.
+- ⏳ Stage 1 — harvest paper metadata (arXiv / OpenAlex / Semantic Scholar). See `pipeline-design.md`.
+- 🅿️ Parked: RL circuit synthesis; verified AuDHD course shortlist.
+
+### Known seed limitations (fine for now)
+- `reference_urls` sparse (Zoo cites via internal bibliography anchors, not direct links) — real refs come in Stage 1.
+- `techniques` sparse (best-effort keyword scan) — low priority.
 
 ---
 
@@ -49,3 +58,4 @@
 - I hold the thread; flag shiny tangents so I can park or chase them on purpose.
 - Recommend a default rather than a menu.
 - This log = external working memory.
+- **Always paste Codex prompts directly in chat (copy-paste ready), every time — don't just point to a file.**
