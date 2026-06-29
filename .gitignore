@@ -1,0 +1,24 @@
+# Secrets — never commit API keys (OpenRouter, DeepSeek, Mistral)
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Large/derived artifacts (keep small curated data; ignore bulky harvests)
+pdfs/
+*.sqlite
+*.db
